@@ -29,8 +29,6 @@ def create_modelfiles(base_path):
                     with modelfile_path.open('w') as modelfile:
                         modelfile.write(f"FROM ./{file}")
                         print(f"Created {modelfile_path}")
-                    modelfile.write(f"FROM ./{file}")
-                    print(f"Created {modelfile_path}")
 
 if __name__ == "__main__":
     models_folder = Path.home() / ".cache/lm-studio/models"
